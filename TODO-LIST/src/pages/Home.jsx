@@ -54,7 +54,15 @@ const Home = () => {
       <div className='container'>
           <form className='todo-form' onSubmit={addTodo}>
             <input type="text" placeholder='Add item...' value={todo} onChange={(e) => setTodo(e.target.value)}/>
-            <input type='button' onClick={addTodo} className='btn-addTodo' value='Add' />
+            <input
+                type='button'
+                onClick={addTodo}
+                className='btn-addTodo'
+                value='Add'
+                disabled={todo.trim() === ''}
+                style={{ cursor: todo.trim() === '' ? 'not-allowed' : 'pointer' }}
+            />
+
           </form>
           {
                 todos.length? (
