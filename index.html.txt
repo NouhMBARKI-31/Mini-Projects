@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="refresh" content="0; url=TODO-LIST/public/index.html" />
+  <title>Redirection vers la TODO-LIST</title>
+</head>
+<body>
+  <p>Redirection vers la TODO-LIST...</p>
+</body>
+</html>
